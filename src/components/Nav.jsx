@@ -14,7 +14,7 @@ function Nav({ menu, toggleMenu }) {
   return (
     <>
       {menu && <div className="layout_menu" onClick={toggleMenu}></div>}
-      <nav className={menu && "active"}>
+      <nav className={menu ? "active" : ""}>
         {/* logo > move to home */}
         <a href="#" className="logo">
           <Logo />

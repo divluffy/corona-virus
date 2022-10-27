@@ -1,11 +1,27 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { Menu } from "../../assets";
 
 function UserHead({ toggleMenu }) {
+  const [isPhoneMode, setIsPhoneMode] = useState(false);
+
+  const handler = (e) => {
+    setIsPhoneMode(window.innerWidth < 450);
+    console.log(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handler);
+    return () => {
+      window.removeEventListener("resize", handler);
+    };
+  }, []);
+
   return (
     <div className="user_head">
       <div className="title_head">
-        <Menu onClick={toggleMenu} />
+        {isPhoneMode && <Menu onClick={toggleMenu} />}
         <h2>Corona virus</h2>
       </div>
       <div className="user_otipns">
