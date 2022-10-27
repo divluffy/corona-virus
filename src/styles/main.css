@@ -160,6 +160,11 @@ main {
   align-items: center;
   font-size: 1rem;
   padding: 15px;
+  transition: 0.25s ease-in-out;
+}
+
+.line_info:hover {
+  background-color: var(--bghoHover);
 }
 
 .line_info > div > span {
@@ -199,8 +204,7 @@ main {
   padding: 100px;
 }
 
-/* Loader */
-
+/* Loader and erros containers */
 .error,
 .Loader {
   width: 100%;
