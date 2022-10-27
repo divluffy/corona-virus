@@ -57,20 +57,20 @@ main {
   position: relative;
 }
 
-.cvoers_viruse {
+.cvoers_virus {
   width: 40%;
   height: 100%;
   position: relative;
 }
 
-.cvoers_viruse img {
+.cvoers_virus img {
   position: absolute;
   width: 211px;
   height: 197px;
   user-select: none;
 }
 
-.cvoers_viruse .viruse_1 {
+.cvoers_virus .virus_1 {
   transform: translate(-50%, -50%) scale(1.4);
   top: 50%;
   left: 50%;
@@ -84,32 +84,32 @@ main {
   }
 }
 
-.cvoers_viruse .viruse_2 {
+.cvoers_virus .virus_2 {
   transform: translate(-50%, -50%) scale(0.5);
   top: 20%;
   left: 20%;
 }
 
-.cvoers_viruse .viruse_3 {
+.cvoers_virus .virus_3 {
   transform: translate(-50%, -50%) scale(0.4);
   top: 70%;
   left: 20%;
 }
 
-.cvoers_viruse .viruse_4 {
+.cvoers_virus .virus_4 {
   transform: translate(-50%, -50%) scale(0.3);
   top: 80%;
   left: 35%;
 }
 
-.cvoers_viruse .viruse_5 {
+.cvoers_virus .virus_5 {
   transform: translate(-50%, -50%) scale(0.6);
   top: 30%;
   left: 80%;
   filter: blur(4px);
 }
 
-.cvoers_viruse .viruse_6 {
+.cvoers_virus .virus_6 {
   transform: translate(-50%, -50%) scale(0.4);
   top: 70%;
   left: 80%;
@@ -219,7 +219,7 @@ main {
     position: absolute;
   }
 
-  .cvoers_viruse {
+  .cvoers_virus {
     width: 100%;
     position: absolute;
   }

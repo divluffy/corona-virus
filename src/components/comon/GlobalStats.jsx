@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Cancel, ViruseImg } from "../../assets";
+import { Cancel, virusImg } from "../../assets";
 import LoopCircleLoading from "react-loadingg/lib/LoopCircleLoading";
 import Line from "./Line";
 import Error from "./Error";
@@ -12,7 +12,7 @@ function GlobalStats() {
   const [error, setError] = useState("");
   const Imgs = new Array(6).fill(0);
 
-  // get data from viruse api
+  // get data from virus api
   const getGlobal = async () => {
     try {
       const { data } = await axios.get(process.env.REACT_APP_API);
@@ -42,19 +42,19 @@ function GlobalStats() {
 
   return (
     <div className="global_stats">
-      {/* image viruse */}
+      {/* image virus */}
       {loader ? (
         <LoopCircleLoading />
       ) : error ? (
         <Error msg={error} />
       ) : (
         <>
-          <div className="cvoers_viruse">
+          <div className="cvoers_virus">
             {Imgs.map((_, i) => {
               return (
                 <img
-                  className={`viruse_${i + 1}`}
-                  src={ViruseImg}
+                  className={`virus_${i + 1}`}
+                  src={virusImg}
                   key={i}
                   alt="image virse"
                 />
